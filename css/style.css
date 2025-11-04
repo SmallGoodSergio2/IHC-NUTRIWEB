@@ -111,3 +111,133 @@ header {
      
 
 }
+
+
+
+.TituloRegistrar{
+
+
+    text-align:center;
+    margin-top: 30px;
+
+}
+
+
+.ContenerCuadrado{
+
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cuadrado{
+    
+    width:200px;
+    height:200px;
+    margin-top: 60px;
+    background-color: aliceblue;
+
+}
+
+
+.SeleccionadoTexto{
+
+
+
+
+    text-align:center;
+    margin-top:50px;
+}
+
+.ContenedorDescripcion{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.Descripcion{
+
+
+   background-color: #FFEACB;
+   width: 600px;
+   height: 250px;
+
+}
+
+.BotonConfirmar{
+  
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:40px;
+}
+
+.TextoBoton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #95674C;
+    width: 300px;
+    height:40px;
+}
+
+
+
+.TituloProgreso{
+
+
+
+     text-align: center;
+     margin-top:40px;
+
+}
+
+.ContenedorCuadradoGrafico{
+
+  display:flex;
+  justify-content: center; 
+}
+
+.CuadradoGrafico{
+
+
+    background-color: aliceblue;
+    margin-top:50px;
+    width: 200px;
+    height: 200px;
+
+}
+
+
+.ProgresoSeleccionado{
+
+
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+
+.BotonVolverMenu{
+  
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:40px;
+}
+
+.TextoBotonVolver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #95674C;
+    width: 300px;
+    height:40px;
+}
