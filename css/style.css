@@ -241,3 +241,61 @@ header {
     width: 300px;
     height:40px;
 }
+
+.MetaCumplir{
+
+
+
+    text-align: center;
+    margin-top:60px;
+}
+
+
+.ContenedorMeta{
+
+  display:flex;
+  justify-content: center; 
+
+
+
+}
+
+.MetaTexto{
+
+    background-color: #FFEACB;
+    margin-top:50px;
+    width: 500px;
+    height: 150px;
+
+}
+
+.TituloDefinir{
+
+
+    text-align: center;
+}
+
+
+.ContenedorFecha{
+
+  display:flex;
+  justify-content: center; 
+
+
+
+}
+
+.FechaTexto{
+
+    background-color: #FFEACB;
+    margin-top:50px;
+    width: 500px;
+    height: 150px;
+
+}
+.MetaFecha{
+
+
+    text-align: center;
+    margin-top: 40px;
+}
