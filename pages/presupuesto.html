@@ -3,42 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recetas por Presupuesto</title>
+  <title>NutriWeb - Recetas por Presupuesto</title>
   <link rel="stylesheet" href="presupuesto.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" class="logo">
-    <div class="perfil">
-      <img src="perfil.png" class="foto">
-      <div><strong>Sergio Saavedra</strong><br>45% Completado</div>
-    </div>
-    <div class="notificaciones">🔔 Notificaciones</div>
-  </header>
-
-  <div class="contenedor">
-    <aside>
-      <ul>
-        <li>Buscar información de comidas</li>
-        <li>Planificar metas</li>
-        <li>Recomendaciones</li>
-        <li>Atención al cliente</li>
-        <li>Configuración</li>
-        <li>Cerrar sesión</li>
-      </ul>
-    </aside>
-
-    <main>
-      <h2>Recetas por Presupuesto</h2>
-      <input type="range" min="0" max="100" value="50">
-      <p>Ingresa tu presupuesto:</p>
-      <img src="ensalada.png" alt="Ensalada de quinua">
-      <div class="receta">
-        <p><strong>Ensalada de quinua con verduras</strong></p>
-        <p>Calorías: 250 kcal<br>Proteínas: 9 g<br>Grasas: 8 g</p>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-section">
+      <div class="logo">Nutri<span class="highlight-logo">Web</span></div>
+      <div class="user-info">
+        <h3>Sergio Saavedra</h3>
       </div>
-      <button>Guardar Receta</button>
-    </main>
+    </div>
+    <div class="header-center">
+      <div class="progress-container">
+        <span class="progress-text">Progreso de meta alimentaria más reciente</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 45%;"></div>
+        </div>
+        <p><strong>45% Completado</strong></p>
+      </div>
+    </div>
+    <div class="header-right">
+      <svg class="notification-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+      <span class="notif-text">Notificaciones</span>
+    </div>
   </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="menu-item">Buscar información de comidas</div>
+    <div class="menu-item">Planificar metas</div>
+    <div class="menu-item">Recomendaciones</div>
+    <div class="menu-item">Atención al cliente</div>
+    <div class="menu-item">Configuración</div>
+    <div class="menu-item">Cerrar sesión</div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content presupuesto">
+    <h1 class="page-title">Recetas por Presupuesto</h1>
+
+    <div class="presupuesto-box">
+      <label for="rango" class="label">Selecciona tu presupuesto:</label>
+      <input id="rango" type="range" min="10" max="100" value="50" class="slider">
+      <p class="valor">S/ <span id="valor">50</span></p>
+
+      <div class="receta-card">
+        <img src="ensalada.png" alt="Ensalada de quinua" class="receta-img">
+        <div class="receta-info">
+          <h3>Ensalada de quinua con verduras</h3>
+          <p>Fresca, nutritiva y económica. Ideal para almuerzos ligeros.</p>
+          <ul>
+            <li>Calorías: 250 kcal</li>
+            <li>Proteínas: 9 g</li>
+            <li>Grasas: 8 g</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-primary">Guardar Receta</button>
+        <button class="btn btn-secondary">Volver al Menú</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const slider = document.getElementById('rango');
+    const valor = document.getElementById('valor');
+    slider.addEventListener('input', () => valor.textContent = slider.value);
+  </script>
 </body>
 </html>
