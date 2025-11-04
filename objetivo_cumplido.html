@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriWeb - Objetivo Cumplido</title>
+
+  <!-- Reusa tu mismo CSS global -->
+  <link rel="stylesheet" href="nutriweb.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="topbar">
+    <div class="container topbar__row">
+      <img class="logo" src="assets/img/logo.png" alt="NutriWeb">
+
+      <div class="profile">
+        <img class="avatar" src="assets/img/avatar.jpg" alt="Sergio Saavedra">
+        <div class="name">Sergio Saavedra</div>
+      </div>
+
+      <div class="progress">
+        <div class="progress__title">Progreso de meta alimentaria más reciente</div>
+        <div class="progress__bar">
+          <div class="progress__fill" style="width:45%"></div>
+        </div>
+        <div class="progress__percent">45% Completado</div>
+      </div>
+
+      <a class="notif" href="#">
+        <img class="notif__icon" src="assets/img/notif.png" alt="Notificaciones">
+        <span>Notificaciones</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- Layout -->
+  <main class="container layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <button class="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu">
+        <a href="#" class="menu__item">Buscar información de comidas</a>
+        <a href="#" class="menu__item">Planificar metas</a>
+        <a href="#" class="menu__item">Recomendaciones</a>
+        <a href="#" class="menu__item">Atención al cliente</a>
+        <a href="#" class="menu__item">Configuración</a>
+        <a href="#" class="menu__item menu__item--last">Cerrar sesión</a>
+      </nav>
+    </aside>
+
+    <!-- Contenido -->
+    <section class="content success">
+  <h1 class="title title--xl">¡Felicidades!<br>Objetivo Cumplido</h1>
+
+  <!-- Carita -->
+  <img class="emoji" src="assets/img/smiley.png" alt="Objetivo cumplido">
+
+  <!-- Botones -->
+  <div class="actions">
+    <a class="btn btn-primary btn-lg" href="#">Marcar Otro Objetivo</a>
+    <a class="btn btn-secondary btn-lg" href="descripcion_comida.html">Volver al Menú</a>
+  </div>
+</section>
+
+  </main>
+</body>
+</html>
