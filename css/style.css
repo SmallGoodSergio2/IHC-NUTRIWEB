@@ -112,16 +112,18 @@ header {
 
 }
 
-.ParteAbajo{
+
+
+footer{
 
 
 
    background-color: #95674C;
    display:flex;
    margin-top: 600px;
+
+
 }
-
-
 .Separacion{
 
   display: flex;
