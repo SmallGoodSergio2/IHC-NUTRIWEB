@@ -111,3 +111,26 @@ header {
      
 
 }
+
+.ParteAbajo{
+
+
+
+   background-color: #95674C;
+   display:flex;
+   margin-top: 600px;
+}
+
+
+.Separacion{
+
+  display: flex;
+  margin-top: 100px;
+
+}
+
+.Contactanos{
+
+   margin-left: 300px;
+   margin-top: 10px;
+}
